@@ -1,0 +1,8 @@
+.coluna{
+    width: 250px;
+    float: left;
+    border: 2px solid;
+    box-sizing: border-box;
+    margin: 1%;
+    padding: 10px;
+}
