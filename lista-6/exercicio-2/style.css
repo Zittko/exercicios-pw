@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(35deg, #0e0ef1, #ee82ee, #aa05aa);
+    min-height: 100vh;
+}
+
+header{
+    text-align: center;
+    padding: 5px;
+    background: linear-gradient(325deg, #1b1b1b, #7c7a7a, #c2c1c1);
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 4px 6px black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+header h1{
+    color: #dbdbdb;
+}
+
+aside{
+    box-sizing: border-box;
+    float: right;
+    background: linear-gradient(200deg, #1b1b1b, #7c7a7a, #c2c1c1);
+    margin-top: -710px;
+    margin-right: 15px;
+    padding: 20px 30px;
+    padding-bottom: 170px;
+    border-radius: 20px;
+    box-shadow: 4px 5px 8px black;
+    width: 40vw;
+}
+table{
+    align-items: center;
+    width: 45vw;
+    max-width: 45vw;
+}
+img{
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 200px;
+    width: 200px;
+    max-height: 350px;
+    max-width: 350px;
+    float: left;
+    border-radius: 50px;
+    box-shadow: 4px 5px 8px black;
+    cursor: pointer;
+}
+
+img:hover{
+    transform: translate(-10px, -10px)
+}
+
+.text{
+    padding: 40px 20px;
+}
+
+a{
+    color: #0ef0f0;
+}
+a:hover{
+    color: rgb(224, 18, 18);
+}
+a:visited{
+    color: #ffa2b2;
+}
+
+footer{
+    color: #f0f8ff;
+}

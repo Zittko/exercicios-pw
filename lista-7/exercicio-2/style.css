@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    background: linear-gradient(45deg, pink, purple, blue) no-repeat center center fixed;
+}
+
+body{
+    overflow-y: auto;
+    background: url(./imagens/confetti.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header{
+    background: url(./imagens/desert.png) no-repeat center center fixed;
+    padding: 1.1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #e6e1e1;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    margin: 1.5rem;
+    width: 16vw;
+    height: 41vh;
+    min-width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: solid 20px #3f3e3e;
+    display: flex;
+    justify-content: center;
+    #c1{
+        background: linear-gradient(75deg, #580058, #7100b3, #2700b6);
+    }
+    #c2{
+        background: linear-gradient(75deg, #005816, #64cf00, #b63a00);
+    }
+    #c3{
+        background: linear-gradient(75deg, #333333, #a7a7a7, #424242);
+    }
+    #c4{
+        background: linear-gradient(75deg, #c7ca00, #00b300, #b62a00);
+    }
+    #c5{
+        background: linear-gradient(75deg, #db8400, #d32000, #dad600);
+    }
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    margin-top: 20px;
+    width: 15vw;
+    height: 30vh;
+    min-width: 250px;
+}
+.card h2, p{
+    width: 15vw;
+    min-width: 300px;
+    border: solid 5px #3f3e3e;
+    text-align: center;
+    background-color: #3f3e3e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+}
+.card a{
+    font-style: oblique;
+    text-decoration: none;
+    color: aqua;
+}
+.card a:hover{
+    text-decoration: underline;
+}
