@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Topline', sans-serif;
+}
+
+:root{
+    --primary-color: #e85f19;
+    --secondary-color: #cc5a5c;
+    --button-color: #fca612;
+    --dark-color: #262627;
+    --info-color: #5d5d5d;
+    --light-color: #f8f9fc;
+}
+
+body{
+    height: 100vh;
+    background: url(./assets/images/bg.png) no-repeat center center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    flex-grow: 1;
+}
+
+header .menu{
+    flex-grow: 3;
+}
+header .menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+header .menu ul li::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s;
+}
+header .menu ul li:hover::after{
+    width: 100%;
+}
+
+button{
+    all: unset;
+    color: var(--light-color);
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 0.7rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 3px var(--primary-color);
+    transition: all 0.2s ;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+}
+
+.principal{
+    width: 17vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.solutions{
+    color: var(--primary-color);
+    font-weight: 1000;
+    cursor: text;
+    font-size: 2rem;
+}
+
+.home{
+    color: var(--primary-color);
+}
+
+.get-started{
+    width: 50vw;
+}
+
+.explore{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.seta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    border: 3px solid var(--button-color);
+}
+
+.more{
+    display: flex;
+    flex-grow: 3;
+    width: 80%;
+}
+.more::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s;
+}
