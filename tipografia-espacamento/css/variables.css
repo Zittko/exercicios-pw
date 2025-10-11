@@ -1,0 +1,16 @@
+:root{
+    --color-primary: #3498db;
+    --color-secondary: #2ecc71;
+    --color-background: #272d2f;
+    --collor-text: #fcfcfc;
+
+    --font-family: 'Poppins', sans-serif;
+    --font-size-base: 16px;
+    --font-size-small: 12px;
+    --font-size-large: 24px;
+
+    --spacing-small: 4px;
+    --spacing-medium: 8px;
+    --spacing-large: 16px;
+
+}

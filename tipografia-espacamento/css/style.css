@@ -1,0 +1,61 @@
+@import url("./reset.css");
+@import url("./variables.css");
+
+@font-face {
+  font-family: "Pascoa";
+  src: url("../assets/fonts/Teloraster.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--collor-text);
+  font-family: var(--font-family);
+  padding: calc(var(--spacing-large) + var(--spacing-small));
+}
+h1 {
+  font-family: "Pascoa", sans-serif;
+}
+
+.medida-relativa-em {
+  font-size: 20px;
+  padding: 30px;
+  background-color: var(--color-primary);
+}
+.medida-relativa-em p {
+  font-size: 2em;
+}
+
+.medida-relativa-rem {
+  font-size: 3rem;
+}
+
+.percentual {
+ display: flex;
+  width: 100%;
+  height: 450px;
+  background-color: var(--color-primary);
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.filho1 {
+  width: 50%;
+  height: 50%;
+  background-color: white;
+}
+.filho2 {
+  width: 20%;
+  height: 20%;
+  background-color: white;
+}
+
+.viwport{
+    width: 50%;
+    height: calc(100vh);
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
