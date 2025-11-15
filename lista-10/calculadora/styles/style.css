@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header {
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/math.jpg);
+    top: 0;
+    left: 0;
+    h1 {
+        color: #fff;
+        text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    }
+}
+main {
+    margin-top: 50px;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculadora {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #363636;
+    gap: 2rem;
+    height: 65vh;
+    min-height: 600px;
+    width: 400px;
+    border-radius: 40px;
+    .tela {
+        height: 12vh;
+        min-height: 90px;
+        width: 80%;
+        margin: 2rem 2rem 0 2rem;
+        background-color: #373f33;
+        border: solid 2px #000;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 1rem;
+        font-size: 2rem;
+        color: #000;
+        overflow: hidden;
+        h1 {
+            font-size: 3rem;
+        }
+    }
+    .teclado {
+        display: grid;
+        gap: 8px;
+        grid-template-areas: 
+            "on cl sqrt prct"
+            "sev egh nin div"
+            "for fiv six mul"
+            "one two thr min"
+            "zer dot eql pls";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 90%;
+        button {
+            font-family:'Times New Roman', Times, serif;
+            font-weight: 600;
+            height: 4rem;
+            width: 4rem;
+            font-size: 2rem;
+            border: 1px solid #000;
+            border-radius: 14px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            place-self: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #on {grid-area: on;}
+        #clear {grid-area: cl;}
+        #sqrt {grid-area: sqrt;}
+        #percent {grid-area: prct;}
+        #divide {grid-area: div;}
+        #times {grid-area: mul;}
+        #minus {grid-area: min;}
+        #plus {grid-area: pls;}
+        #equals {grid-area: eql;}
+        #dot {grid-area: dot;}
+        #number-1 {grid-area: one;}
+        #number-2 {grid-area: two;}
+        #number-3 {grid-area: thr;}
+        #number-4 {grid-area: for;}
+        #number-5 {grid-area: fiv;}
+        #number-6 {grid-area: six;}
+        #number-7 {grid-area: sev;}
+        #number-8 {grid-area: egh;}
+        #number-9 {grid-area: nin;}
+        #number-0 {grid-area: zer;}
+        .number {
+            background-color: #5e5c5c;
+        }
+        #clear {
+            background-color: #c04343;
+        }
+        #equals, #on {
+            background-color: #ff9500;
+        }
+        #plus, #minus, #times, #divide,  #sqrt, #percent {
+            background-color: #929090;
+        }
+        .number:hover {
+            background-color: #413f3f;
+        }
+        #clear:hover {
+            background-color: #832e2e;
+        }
+        #equals:hover, #on:hover {
+            background-color: #af6600;
+        }
+        #plus:hover, #minus:hover, #times:hover, #divide:hover, #sqrt:hover, #percent:hover {
+            background-color: #727272;
+        }
+        .number:active {
+            background-color: #4b4a4a;
+        }
+        #clear:active {
+            background-color: #923232;
+        }
+        #equals:active, #on:active {
+            background-color: #834c00;
+        }
+        #plus:active, #minus:active, #times:active, #divide:active,  #sqrt:active, #percent:active {
+            background-color: #3a3a3a;
+        }
+    }
+}
