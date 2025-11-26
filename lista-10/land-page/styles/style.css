@@ -1,0 +1,121 @@
+@import url(https://db.onlinewebfonts.com/c/1868e326d3ee28e5395f6efa2bc037bf?family=Eina01-Regular);
+
+@font-face {
+    font-family: "Eina01-Regular";
+    src: url("https://db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.eot");
+    src: url("https://db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1868e326d3ee28e5395f6efa2bc037bf.svg#Eina01-Regular")format("svg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Eina01-Regular";
+    overflow: hidden;
+}
+
+body {
+    padding: 50px;
+    background-color: #0e001a;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logotype {
+        height: 3.5rem;
+    }
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        width: 30%;
+        .link {
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: #fff;
+        }
+        .link::after {
+            content: '';
+            display: block;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            transition: width 0.3s;
+        }
+        .link:hover::after{
+            width: 100%;
+        }
+    }
+    .sign-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        width: 10%;
+        height: 3.4rem;
+        border-radius: 50px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+main {
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+        height: 80vh;
+        padding: 5rem;
+        background: linear-gradient(135deg, #120022, #430199);
+        h1, h2 {
+            position: relative;
+            color: white;
+        }
+        h2, h3 {
+            font-weight: 500;
+        }
+        h1 {
+            width: 24%;
+            font-weight: 1000;
+            margin: 1.4rem 0;
+        }
+        h2 {
+            width: 27%;
+            margin-bottom: 3rem;
+        }
+        h3 {
+            margin-top: 70px;
+            width: 12%;
+            padding: 10px 20px;
+            color: black;
+            background-color: #b398ff;
+            border-radius: 50px;
+        }
+    }
+    .start-free {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        width: 20%;
+        height: 4.5rem;
+        border-radius: 50px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        cursor: pointer;
+        .arrow {
+            padding: 14px;
+            border-radius: 100px;
+            position: relative;
+            left: 40px;
+            background-color: #120022;
+        }
+    }
+}
