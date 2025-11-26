@@ -118,4 +118,12 @@ main {
             background-color: #120022;
         }
     }
+    .banner {
+        width: 60%;
+        height: 65vh;
+        position: relative;
+        left: 600px;
+        bottom: 550px;
+        z-index: 2;
+    }
 }
